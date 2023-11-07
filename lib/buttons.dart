@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 
 class CalButton extends StatelessWidget {
   const CalButton(
-      {super.key, this.color, this.textColor, required this.buttonText,this.buttonTapped});
+      {super.key,
+      this.color,
+      this.textColor,
+      required this.buttonText,
+      this.buttonTapped});
 
   final color;
   final textColor;
@@ -22,7 +26,7 @@ class CalButton extends StatelessWidget {
             child: Center(
               child: Text(
                 buttonText,
-                style: TextStyle(color: textColor),
+                style: TextStyle(color: textColor, fontSize: 20),
               ),
             ),
           ),
